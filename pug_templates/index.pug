@@ -1,0 +1,18 @@
+html
+  head
+    title d2MagCalc
+body
+  include ./header
+  br
+  div#main
+      div#content
+        if (result > 0)
+          | Initial Mag Size: #{size}
+          br
+          | Perk:&nbsp
+          if (perk == 3)
+            | Triple Tap
+          if (perk == 4)
+            | 4th Times
+          br
+          | Total Number of Shots Before Reloading: #{result}
